@@ -1,3 +1,9 @@
+:root {
+    --bg-color-trial: rgb(40, 210, 196);
+    --bg-color-full: rgb(27, 61, 211);
+    --bg-color-professional: rgb(142, 16, 201);
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -6,7 +12,6 @@
 h1 {
     text-align: center;
     font-size: 30px;
-
 }
 
 .row {
@@ -19,44 +24,33 @@ h1 {
     margin-left: 30px;
 
     width: 300px;
-    height: 450px;
+    height: 430px;
 
     position: relative;
 
     box-shadow: 0 0 5px 3px grey;
-
-    
 }
 
-.hidden {
-    padding: 40px 0;
 
-    box-sizing: border-box;
-
-    width: 100%;
-    height: 100%;
-    
-    position: absolute;
-
-    background-color: #000000c9;
-
-    color: aliceblue;
-
-    display: none; /*полностью убирает элемент со страницы*/
-
-}
-
-.hidden-head {
+.head {
     font-size: 22px;
     text-align: center;
 
-    margin: 10px 0 10px 0;
-    padding: 8px;
+    margin: 10px 0 0 0;
+    padding-top: 8px;
 }
 
-.hidden-description {
-    margin: 20px 0 0 0 0;
-    padding: 10px 20px;
+.line {
+    font-weight: bold;
+
+    margin: 0;
+
+    text-align: center;
+}
+
+.description {
+    margin-top: 16px;
+    padding: 0 20px;
     text-align: justify;
 }
 
@@ -67,7 +61,42 @@ h1 {
     font-weight: bold;
 }
 
-.continue {
-    background-color: aquamarine;
-    
+.card input {
+   width: 170px;
+   height: 35px;
+
+   color: white;
+
+   position: absolute;
+
+   bottom: -15px;
+   right: 15px;
+
+   border-radius: 40px;
+   border: none;
 }
+
+#trial {
+    background-color: var(--bg-color-trial);
+}
+
+#full {
+    background-color: var(--bg-color-full);
+}
+
+#professional {
+    background-color: var(--bg-color-professional);
+}
+
+#p-trial {
+    color: var(--bg-color-trial);
+}
+
+#p-full {
+    color: var(--bg-color-full);
+}
+
+#p-professional {
+    color: var(--bg-color-professional);
+}
+
